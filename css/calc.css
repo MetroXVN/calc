@@ -1,0 +1,62 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(91, 91, 100),
+    rgb(20, 10, 80)
+  );
+}
+
+#calc {
+  display: block;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+#viewfield {
+  width: 250px;
+  height: 60px;
+  font-size: 35px;
+  margin: 5px;
+  text-align: right;
+  border-bottom: 0px;
+}
+
+table {
+  margin-top: 0px;
+}
+
+.button {
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  padding: 0;
+}
+
+.button.clear {
+  width: 124px;
+  background-color: tomato;
+  border-color: tomato;
+  color: azure;
+}
+
+.button.clearEntry {
+  background-color: tomato;
+  border-color: tomato;
+  color: azure;
+}
+
+tr {
+  display: block;
+}
+
+.result {
+  background-color: darkgreen;
+  border-color: darkgreen;
+  color: azure;
+}
+
+.oper {
+  background-color: lightgrey;
+  border-color: lightgrey;
+}

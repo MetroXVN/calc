@@ -1,0 +1,185 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/calc.css" />
+    <title>Calculator v.1.0</title>
+  </head>
+  <body>
+    <div id="calc">
+      <form name="form"><input id="viewfield" value="0" disabled /></form>
+      <table>
+        <tr>
+          <td>
+            <input
+              class="button clear"
+              type="button"
+              value="C"
+              onclick="clearScreen()"
+            />
+          </td>
+          <td>
+            <input
+              id="module"
+              class="button oper"
+              type="button"
+              value="%"
+              onclick="addOperator(value)"
+            />
+          </td>
+          <td>
+            <input
+              id="devide"
+              class="button oper"
+              type="button"
+              value="/"
+              onclick="addOperator(value)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="7"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="8"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="9"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              id="multiply"
+              class="button oper"
+              type="button"
+              value="*"
+              onclick="addOperator(value)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="4"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="5"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="6"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              id="minus"
+              class="button oper"
+              type="button"
+              value="-"
+              onclick="addOperator(value)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="1"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="2"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="3"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              id="plus"
+              class="button oper"
+              type="button"
+              value="+"
+              onclick="addOperator(value)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              class="button clearEntry"
+              type="button"
+              value="CE"
+              onclick="clearEntry()"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="0"
+              onclick="addNum(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button"
+              type="button"
+              value="."
+              onclick="addDecimal(value)"
+            />
+          </td>
+          <td>
+            <input
+              class="button result"
+              type="button"
+              value="="
+              onclick="calcResult()"
+            />
+          </td>
+        </tr>
+      </table>
+
+      <script src="./js/calc.js"></script>
+    </div>
+  </body>
+</html>
